@@ -1,229 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PulseSphere Official</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PulseSphere Login</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+<style>
 
-    body{
-      font-family:Arial, Helvetica, sans-serif;
-      background:linear-gradient(180deg,#07111f,#000);
-      color:white;
-      overflow-x:hidden;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    header{
-      padding:30px;
-      text-align:center;
-    }
+body{
+font-family:Arial;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+linear-gradient(135deg,#08111f,#000);
+color:white;
+overflow:hidden;
+}
 
-    .logo{
-      font-size:48px;
-      font-weight:900;
-      color:#46d7ff;
-      text-shadow:0 0 20px #46d7ff;
-    }
+.login-box{
+width:380px;
+padding:40px;
+border-radius:30px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 0 40px rgba(70,215,255,0.15);
+text-align:center;
+}
 
-    .tagline{
-      margin-top:10px;
-      color:#ccc;
-      font-size:18px;
-    }
+.logo{
+font-size:42px;
+font-weight:900;
+margin-bottom:10px;
+color:#46d7ff;
+text-shadow:0 0 20px #46d7ff;
+}
 
-    .hero{
-      text-align:center;
-      padding:80px 20px;
-      max-width:1000px;
-      margin:auto;
-    }
+.subtitle{
+color:#ccc;
+margin-bottom:35px;
+}
 
-    .hero h1{
-      font-size:64px;
-      margin-bottom:20px;
-    }
+input{
+width:100%;
+padding:15px;
+margin:12px 0;
+border:none;
+outline:none;
+border-radius:15px;
+background:#111;
+color:white;
+font-size:16px;
+}
 
-    .highlight{
-      color:#46d7ff;
-    }
+button{
+width:100%;
+padding:16px;
+margin-top:20px;
+border:none;
+border-radius:20px;
+background:#46d7ff;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 0 20px rgba(70,215,255,.4);
+}
 
-    .hero p{
-      font-size:22px;
-      color:#ddd;
-      line-height:1.7;
-      margin-bottom:35px;
-    }
+button:hover{
+transform:scale(1.03);
+}
 
-    .buttons{
-      display:flex;
-      justify-content:center;
-      gap:20px;
-      flex-wrap:wrap;
-    }
+.bottom{
+margin-top:25px;
+font-size:14px;
+color:#aaa;
+}
 
-    .btn{
-      padding:16px 30px;
-      border-radius:40px;
-      text-decoration:none;
-      color:white;
-      font-weight:bold;
-      background:#46d7ff;
-      box-shadow:0 0 25px rgba(70,215,255,.6);
-      transition:.3s;
-    }
+.bottom a{
+color:#46d7ff;
+text-decoration:none;
+}
 
-    .btn:hover{
-      transform:scale(1.08);
-    }
-
-    .secondary{
-      background:#222;
-    }
-
-    .features{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-      padding:40px;
-      max-width:1200px;
-      margin:auto;
-    }
-
-    .card{
-      background:rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.1);
-      padding:30px;
-      border-radius:25px;
-      backdrop-filter:blur(8px);
-      transition:.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-10px);
-      box-shadow:0 0 25px rgba(70,215,255,.25);
-    }
-
-    .card h3{
-      color:#46d7ff;
-      margin-bottom:15px;
-      font-size:24px;
-    }
-
-    .card p{
-      color:#ccc;
-      line-height:1.6;
-    }
-
-    .gallery{
-      padding:70px 20px;
-      text-align:center;
-    }
-
-    .gallery h2{
-      font-size:42px;
-      margin-bottom:40px;
-    }
-
-    .images{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:25px;
-      max-width:1200px;
-      margin:auto;
-    }
-
-    .images img{
-      width:100%;
-      border-radius:25px;
-      border:2px solid rgba(255,255,255,.1);
-      transition:.3s;
-    }
-
-    .images img:hover{
-      transform:scale(1.03);
-      box-shadow:0 0 25px rgba(70,215,255,.35);
-    }
-
-    footer{
-      text-align:center;
-      padding:40px;
-      color:#888;
-      font-size:14px;
-    }
-
-  </style>
+</style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">PulseSphere</div>
-  <div class="tagline">Connect • Share • Inspire</div>
-</header>
+<div class="login-box">
 
-<section class="hero">
-  <h1>Welcome to <span class="highlight">PulseSphere</span></h1>
+<div class="logo">PulseSphere</div>
 
-  <p>
-    PulseSphere is an AI-powered social platform designed to help people connect,
-    share experiences, and create smarter digital interactions.
-  </p>
+<div class="subtitle">
+Connect • Share • Inspire
+</div>
 
-  <div class="buttons">
-    <a class="btn" href="#">Download App</a>
-    <a class="btn secondary" href="mailto:chokri.baccouch2017@gmail.com">Contact Founder</a>
-  </div>
-</section>
+<input type="email" placeholder="Email">
 
-<section class="features">
+<input type="password" placeholder="Password">
 
-  <div class="card">
-    <h3>AI Captions</h3>
-    <p>Create smart captions for photos, videos and posts using artificial intelligence.</p>
-  </div>
+<button>Login</button>
 
-  <div class="card">
-    <h3>Social Feed</h3>
-    <p>Share updates, discover stories and interact with people in real time.</p>
-  </div>
+<div class="bottom">
+Don't have an account?
+<a href="#">Create Account</a>
+</div>
 
-  <div class="card">
-    <h3>Smart Profiles</h3>
-    <p>Build a modern profile that reflects your digital identity beautifully.</p>
-  </div>
-
-  <div class="card">
-    <h3>Future Ready</h3>
-    <p>Designed for growth, investors, testers and worldwide expansion.</p>
-  </div>
-
-</section>
-
-<section class="gallery">
-
-  <h2>App Preview</h2>
-
-  <div class="images">
-
-    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop" />
-
-    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop" />
-
-    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" />
-
-  </div>
-
-</section>
-
-<footer>
-  © 2026 PulseSphere by Chokri Baccouche. All rights reserved.
-</footer>
+</div>
 
 </body>
 </html>
