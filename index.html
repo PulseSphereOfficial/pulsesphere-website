@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>PulseSphere</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseSphere Official</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:radial-gradient(circle at top,#12233f 0,#05070d 45%,#000 100%);
+      color:white;min-height:100vh;text-align:center;overflow-x:hidden;
+    }
+    header{padding:34px 20px}
+    .logo{
+      font-size:42px;font-weight:900;letter-spacing:.5px;
+      background:linear-gradient(90deg,#24e6ff,#8b5cff,#ff3df2);
+      -webkit-background-clip:text;color:transparent;
+    }
+    .tagline{margin-top:8px;color:#cfd8ff;font-size:18px}
+    .hero{padding:70px 20px 40px;max-width:1000px;margin:auto}
+    h1{font-size:56px;line-height:1.05;margin-bottom:18px}
+    .highlight{color:#36e7ff}
+    p{font-size:20px;color:#d7ddff;line-height:1.6;max-width:760px;margin:0 auto 28px}
+    .buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+    .btn{
+      text-decoration:none;color:white;padding:15px 24px;border-radius:999px;
+      font-weight:700;border:1px solid rgba(255,255,255,.18);
+      background:linear-gradient(90deg,#00d4ff,#7b4dff);
+      box-shadow:0 10px 35px rgba(0,212,255,.25)
+    }
+    .btn.secondary{background:rgba(255,255,255,.07)}
+    .cards{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+      gap:18px;max-width:1050px;margin:45px auto;padding:0 20px
+    }
+    .card{
+      padding:24px;border-radius:22px;background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(8px)
+    }
+    .card h3{font-size:22px;margin-bottom:10px;color:#55e8ff}
+    .card p{font-size:15px;margin:0;color:#c9d0ec}
+    footer{padding:35px 20px;color:#8f98bb;font-size:14px}
+  </style>
 </head>
-<body style="background:black;color:white;text-align:center;font-family:Arial;">
-  <h1>Welcome to PulseSphere</h1>
-  <p>The future starts here.</p>
+<body>
+  <header>
+    <div class="logo">PulseSphere</div>
+    <div class="tagline">Connect • Share • Inspire</div>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to <span class="highlight">PulseSphere</span></h1>
+    <p>
+      PulseSphere is an AI-powered social experience designed to help people
+      connect, share moments, and create smarter digital interactions.
+    </p>
+    <div class="buttons">
+      <a class="btn" href="#">Download App</a>
+      <a class="btn secondary" href="mailto:chokri.baccouch2017@gmail.com">Contact Founder</a>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card"><h3>AI Captions</h3><p>Create smart captions for photos, videos, and posts using AI.</p></div>
+    <div class="card"><h3>Social Feed</h3><p>Share updates, discover stories, and interact with people in real time.</p></div>
+    <div class="card"><h3>Smart Profiles</h3><p>Build a modern profile that reflects your digital identity.</p></div>
+    <div class="card"><h3>Future Ready</h3><p>Designed for growth, investors, testers, and global expansion.</p></div>
+  </section>
+
+  <footer>© 2026 PulseSphere by Chokri Baccouche. All rights reserved.</footer>
 </body>
 </html>
