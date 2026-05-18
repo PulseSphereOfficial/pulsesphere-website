@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PulseSphere Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:radial-gradient(circle at top,#112233,#05070d 60%,#000);
+font-family:Arial;
+color:white;
+}
+
+.login-box{
+width:350px;
+padding:40px;
+border-radius:25px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 0 25px rgba(0,255,255,0.15);
+}
+
+.logo{
+font-size:42px;
+font-weight:900;
+text-align:center;
+margin-bottom:10px;
+background:linear-gradient(90deg,#46e6ff,#85fcff,#f3dff2);
+-webkit-background-clip:text;
+color:transparent;
+text-shadow:0 0 15px #46e6ff;
+}
+
+.subtitle{
+text-align:center;
+margin-bottom:30px;
+color:#ddd;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:12px 0;
+border:none;
+border-radius:12px;
+background:#111;
+color:white;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:20px;
+border:none;
+border-radius:15px;
+background:#46e6ff;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 0 20px #46e6ff;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+.bottom{
+margin-top:20px;
+text-align:center;
+color:#ccc;
+}
+
+.bottom a{
+color:#46e6ff;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+<div class="logo">PulseSphere</div>
+
+<div class="subtitle">
+Connect • Share • Inspire
+</div>
+
+<input type="email" placeholder="Email">
+
+<input type="password" placeholder="Password">
+
+<button>Login</button>
+
+<div class="bottom">
+Don't have an account?
+<a href="#">Create Account</a>
+</div>
+
+</div>
+
+</body>
+</html>
