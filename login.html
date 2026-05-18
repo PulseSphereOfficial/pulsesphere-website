@@ -112,7 +112,7 @@ Connect • Share • Inspire
 
 <div class="bottom">
 Don't have an account?
-<a href="#">Create Account</a>
+<a href="javascript:void(0)" id="createAccount">Create Account</a>
 </div>
 
 </div>
@@ -151,33 +151,32 @@ const button = document.querySelector("button");
 
 button.addEventListener("click", async () => {
 
-const email = document.querySelectorAll("input")[0].value;
+button.addEventListener("click", async () => {
 
-const password = document.querySelectorAll("input")[1].value;
+  const email = document.querySelectorAll("input")[0].value;
+  const password = document.querySelectorAll("input")[1].value;
 
-try {
+  try {
 
-await signInWithEmailAndPassword(auth,email,password);
+    await signInWithEmailAndPassword(auth, email, password);
 
-window.location.href = "index.html";
+    window.location.href = "index.html";
 
-}
-catch(error){
+  } catch(error) {
 
-try{
+    try {
 
-await createUserWithEmailAndPassword(auth,email,password);
+      await createUserWithEmailAndPassword(auth, email, password);
 
-window.location.href = "index.html";
+      window.location.href = "index.html";
 
-}
-catch(err){
+    } catch(err) {
 
-alert(err.message);
+      alert(err.message);
 
-}
+    }
 
-}
+  }
 
 });
 
