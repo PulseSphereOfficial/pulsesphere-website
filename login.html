@@ -116,6 +116,71 @@ Don't have an account?
 </div>
 
 </div>
+<script type="module">
 
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import {
+getAuth,
+signInWithEmailAndPassword,
+createUserWithEmailAndPassword
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+const firebaseConfig = {
+
+apiKey: "PASTE_API_KEY_HERE",
+
+authDomain: "pulsesphere-5e804.firebaseapp.com",
+
+projectId: "pulsesphere-5e804",
+
+storageBucket: "pulsesphere-5e804.appspot.com",
+
+messagingSenderId: "525827306876",
+
+appId: "PASTE_APP_ID_HERE"
+
+};
+
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", async () => {
+
+const email = document.querySelectorAll("input")[0].value;
+
+const password = document.querySelectorAll("input")[1].value;
+
+try {
+
+await signInWithEmailAndPassword(auth,email,password);
+
+alert("Login successful!");
+
+}
+catch(error){
+
+try{
+
+await createUserWithEmailAndPassword(auth,email,password);
+
+alert("Account created!");
+
+}
+catch(err){
+
+alert(err.message);
+
+}
+
+}
+
+});
+
+</script>
 </body>
 </html>
