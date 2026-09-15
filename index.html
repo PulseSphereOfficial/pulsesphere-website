@@ -19,6 +19,7 @@
 <footer><div class="wrap footer-row"><span>© 2026 PulseSphere</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></span><span class="status" data-ar="● الموقع يعمل" data-en="● Website online">● الموقع يعمل</span></div></footer>
 <script>
   const $=s=>document.querySelector(s), all=s=>document.querySelectorAll(s);let lang=localStorage.getItem('ps-lang')||'ar';
+  const versionBadge=document.querySelector('.eyebrow');versionBadge.dataset.ar='● يعمل محليًا • إصدار 1.10.0';versionBadge.dataset.en='● Offline-first • Version 1.10.0';
   function apply(){document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';$('#lang').textContent=lang==='ar'?'EN':'ع';all('[data-ar]').forEach(e=>e.innerHTML=e.dataset[lang]);all('[data-ar-placeholder]').forEach(e=>e.placeholder=e.dataset[lang+'Placeholder']);localStorage.setItem('ps-lang',lang)}
   $('#lang').onclick=()=>{lang=lang==='ar'?'en':'ar';apply()};apply();
   const chat=$('#chat'),saved=JSON.parse(localStorage.getItem('ps-demo')||'[]');saved.slice(-8).forEach(m=>add(m.text,m.mine,false));
