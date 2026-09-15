@@ -1,121 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PulseSphere Login</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:
-linear-gradient(135deg,#08111f,#000);
-color:white;
-overflow:hidden;
-}
-
-.login-box{
-width:380px;
-padding:40px;
-border-radius:30px;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(12px);
-border:1px solid rgba(255,255,255,0.1);
-box-shadow:0 0 40px rgba(70,215,255,0.15);
-text-align:center;
-}
-
-.logo{
-font-size:42px;
-font-weight:900;
-margin-bottom:10px;
-color:#46d7ff;
-text-shadow:0 0 20px #46d7ff;
-}
-
-.subtitle{
-color:#ccc;
-margin-bottom:35px;
-}
-
-input{
-width:100%;
-padding:15px;
-margin:12px 0;
-border:none;
-outline:none;
-border-radius:15px;
-background:#111;
-color:white;
-font-size:16px;
-}
-
-button{
-width:100%;
-padding:16px;
-margin-top:20px;
-border:none;
-border-radius:20px;
-background:#46d7ff;
-color:white;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
-transition:.3s;
-box-shadow:0 0 20px rgba(70,215,255,.4);
-}
-
-button:hover{
-transform:scale(1.03);
-}
-
-.bottom{
-margin-top:25px;
-font-size:14px;
-color:#aaa;
-}
-
-.bottom a{
-color:#46d7ff;
-text-decoration:none;
-}
-
-</style>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PulseSphere — your private, bilingual AI-first assistant.">
+  <meta name="theme-color" content="#070b18"><title>PulseSphere — Your intelligent space</title>
+  <style>
+    :root{--bg:#070b18;--panel:#11172a;--line:#26314d;--text:#f8fafc;--muted:#94a3b8;--violet:#8b5cf6;--cyan:#22d3ee;--green:#34d399}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 70% -10%,#312e8155,transparent 35%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,a,input{font:inherit}.wrap{width:min(1120px,92%);margin:auto}.nav-inner{display:flex;align-items:center;justify-content:space-between}nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#070b18dc;backdrop-filter:blur(15px);z-index:10}.brand{font-size:22px;font-weight:900;color:var(--text);text-decoration:none}.brand i{color:var(--cyan);font-style:normal}.nav-actions{display:flex;align-items:center;gap:9px}.btn{border:0;border-radius:14px;padding:10px 16px;color:white;background:var(--violet);font-weight:750;cursor:pointer;text-decoration:none}.ghost{background:#ffffff0b;border:1px solid var(--line)}.hero{min-height:620px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px;padding:60px 0}.eyebrow{color:var(--green);font-size:13px;font-weight:800}.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.02;margin:12px 0 20px;letter-spacing:-2px}.gradient{background:linear-gradient(100deg,var(--cyan),#a78bfa);background-clip:text;color:transparent}.lead{font-size:19px;color:#cbd5e1;max-width:650px}.hero-actions{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}.orb-wrap{display:grid;place-items:center;min-height:360px}.orb{width:230px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 25%,#e0faff,#22d3ee 12%,#8b5cf6 48%,#2e1065 75%);box-shadow:0 0 50px #22d3ee66,0 0 120px #8b5cf655;display:flex;align-items:center;justify-content:center;gap:35px;animation:float 4s ease-in-out infinite}.eye{width:17px;height:31px;border-radius:20px;background:white;box-shadow:0 0 15px white}@keyframes float{50%{transform:translateY(-16px) rotate(2deg)}}section{padding:75px 0}.section-title{text-align:center;font-size:clamp(30px,5vw,46px);margin:0 0 12px}.section-sub{text-align:center;color:var(--muted);margin:0 auto 36px;max-width:700px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(145deg,#171f36,#0e1426);border:1px solid var(--line);border-radius:22px;padding:24px}.card b{display:block;font-size:19px;margin:10px 0 6px}.card p{color:var(--muted);margin:0}.icon{font-size:28px}.demo{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px;align-items:stretch}.phone{background:#0b1020;border:1px solid #334155;border-radius:28px;padding:18px;min-height:470px;box-shadow:0 30px 80px #0007}.chat{height:340px;overflow:auto;display:flex;flex-direction:column;gap:9px;padding:8px}.bubble{padding:11px 13px;border-radius:15px;max-width:85%;background:var(--panel);border:1px solid var(--line)}.mine{align-self:flex-start;background:#4c2a85}.assistant{align-self:flex-end}.composer{display:flex;gap:8px;border-top:1px solid var(--line);padding-top:12px}.composer input{flex:1;min-width:0;border:1px solid var(--line);border-radius:13px;background:var(--panel);color:white;padding:12px;outline:none}.composer button{width:45px;padding:0}.privacy{background:#0d1728;border:1px solid #164e63;border-radius:22px;padding:28px;display:flex;flex-direction:column;justify-content:center}.privacy h3{font-size:30px;margin:0 0 10px}.privacy li{margin:8px 0;color:#cbd5e1}footer{border-top:1px solid #ffffff12;padding:30px 0;color:var(--muted)}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.status{color:var(--green)}
+    @media(max-width:800px){.hero,.demo{grid-template-columns:1fr}.hero{text-align:center;padding-top:35px}.lead{margin:auto}.hero-actions{justify-content:center}.orb{width:180px}.orb-wrap{min-height:250px}.grid{grid-template-columns:1fr}.nav-login{display:none}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}.orb{animation:none}}
+  </style>
 </head>
-
 <body>
+<nav><div class="wrap nav-inner"><a class="brand" href="#">Pulse<i>Sphere</i></a><div class="nav-actions"><button id="lang" class="btn ghost" type="button" aria-label="Change language">EN</button><a class="btn ghost nav-login" href="login.html" data-ar="دخول" data-en="Login">دخول</a><a class="btn" href="#demo" data-ar="جرّبه الآن" data-en="Try now">جرّبه الآن</a></div></div></nav>
+<main>
+  <header class="wrap hero"><div><div class="eyebrow" data-ar="● يعمل محليًا • إصدار 1.9.4" data-en="● Offline-first • Version 1.9.4">● يعمل محليًا • إصدار 1.9.4</div><h1 data-ar="ذكاؤك الخاص.<br><span class='gradient'>في كرة نابضة.</span>" data-en="Your private intelligence.<br><span class='gradient'>Inside a living sphere.</span>">ذكاؤك الخاص.<br><span class="gradient">في كرة نابضة.</span></h1><p class="lead" data-ar="PulseSphere مساعد عربي وإنجليزي ينظّم مهامك وملاحظاتك وذاكرتك البصرية، ويحفظ بياناتك على جهازك." data-en="PulseSphere is a bilingual assistant that organizes tasks, notes, and visual memories while keeping your data on your device.">PulseSphere مساعد عربي وإنجليزي ينظّم مهامك وملاحظاتك وذاكرتك البصرية، ويحفظ بياناتك على جهازك.</p><div class="hero-actions"><a class="btn" href="#demo" data-ar="تجربة مباشرة" data-en="Live demo">تجربة مباشرة</a><a class="btn ghost" href="https://github.com/PulseSphereOfficial/PulseSphere" data-ar="مشروع التطبيق" data-en="App repository">مشروع التطبيق</a></div></div><div class="orb-wrap" role="img" aria-label="PulseSphere"><div class="orb"><span class="eye"></span><span class="eye"></span></div></div></header>
+  <section id="features"><div class="wrap"><h2 class="section-title" data-ar="ليس مجرد صور" data-en="More than static screens">ليس مجرد صور</h2><p class="section-sub" data-ar="وظائف حقيقية تعمل الآن دون حساب أو اشتراك." data-en="Real features that work now without an account or subscription.">وظائف حقيقية تعمل الآن دون حساب أو اشتراك.</p><div class="grid"><article class="card"><span class="icon">✦</span><b data-ar="مساعد ينفّذ" data-en="An assistant that acts">مساعد ينفّذ</b><p data-ar="أنشئ مهمة أو ملاحظة مباشرة من المحادثة." data-en="Create tasks and notes directly from chat.">أنشئ مهمة أو ملاحظة مباشرة من المحادثة.</p></article><article class="card"><span class="icon">◉</span><b data-ar="ذاكرة بصرية" data-en="Visual memory">ذاكرة بصرية</b><p data-ar="التقط الصور ووصفها واحفظها محليًا." data-en="Capture, caption, and store images locally.">التقط الصور ووصفها واحفظها محليًا.</p></article><article class="card"><span class="icon">🔊</span><b data-ar="صوت عربي وإنجليزي" data-en="Arabic & English voice">صوت عربي وإنجليزي</b><p data-ar="استمع إلى ردود PulseSphere بصوت الجهاز." data-en="Hear PulseSphere replies using your device voice.">استمع إلى ردود PulseSphere بصوت الجهاز.</p></article></div></div></section>
+  <section id="demo"><div class="wrap demo"><div class="privacy"><h3 data-ar="خصوصيتك أولًا" data-en="Privacy first">خصوصيتك أولًا</h3><ul><li data-ar="لا رفع للمحادثات" data-en="No chat uploads">لا رفع للمحادثات</li><li data-ar="لا اشتراك إجباري" data-en="No required subscription">لا اشتراك إجباري</li><li data-ar="حفظ محلي على جهازك" data-en="On-device local storage">حفظ محلي على جهازك</li></ul></div><div class="phone"><div class="chat" id="chat"><div class="bubble assistant" data-ar="مرحبًا! اكتب: أضف مهمة: تجربة PulseSphere" data-en="Hello! Type: Add task: Test PulseSphere">مرحبًا! اكتب: أضف مهمة: تجربة PulseSphere</div></div><form class="composer" id="form"><input id="message" type="text" autocomplete="off" data-ar-placeholder="اكتب رسالة…" data-en-placeholder="Type a message…" placeholder="اكتب رسالة…"><button class="btn" type="submit" aria-label="Send">↑</button></form></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© 2026 PulseSphere</span><span class="status" data-ar="● الموقع يعمل" data-en="● Website online">● الموقع يعمل</span><span>pulsesphere.to</span></div></footer>
+<script>
+  const $=s=>document.querySelector(s), all=s=>document.querySelectorAll(s);let lang=localStorage.getItem('ps-lang')||'ar';
+  function apply(){document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';$('#lang').textContent=lang==='ar'?'EN':'ع';all('[data-ar]').forEach(e=>e.innerHTML=e.dataset[lang]);all('[data-ar-placeholder]').forEach(e=>e.placeholder=e.dataset[lang+'Placeholder']);localStorage.setItem('ps-lang',lang)}
+  $('#lang').onclick=()=>{lang=lang==='ar'?'en':'ar';apply()};apply();
+  const chat=$('#chat'),saved=JSON.parse(localStorage.getItem('ps-demo')||'[]');saved.slice(-8).forEach(m=>add(m.text,m.mine,false));
+  function add(text,mine,save=true){const b=document.createElement('div');b.className='bubble '+(mine?'mine':'assistant');b.textContent=text;chat.appendChild(b);chat.scrollTop=chat.scrollHeight;if(save){saved.push({text,mine});localStorage.setItem('ps-demo',JSON.stringify(saved.slice(-16)))}}
+  $('#form').onsubmit=e=>{e.preventDefault();const v=$('#message').value.trim();if(!v)return;add(v,true);$('#message').value='';const task=/^(أضف|اضف)\s+مهمة|^add\s+task/i.test(v);setTimeout(()=>add(task?(lang==='ar'?'تمت إضافة المهمة في تجربة الموقع ✓':'Task added in this website demo ✓'):(lang==='ar'?'فهمت. تطبيق PulseSphere يحفظ محادثاتك ويفهم أوامر المهام والملاحظات محليًا.':'Understood. The PulseSphere app stores chats and handles task and note commands locally.'),false),250)};
+</script>
+</body></html>
 
-<div class="login-box">
-
-<div class="logo">PulseSphere</div>
-
-<div class="subtitle">
-Connect • Share • Inspire
-</div>
-
-<input type="email" placeholder="Email">
-
-<input type="password" placeholder="Password">
-
-<button>Login</button>
-
-<div class="bottom">
-Don't have an account?
-<a href="#">Create Account</a>
-</div>
-
-</div>
-
-</body>
-</html>
