@@ -1,0 +1,156 @@
+{
+  "languages": [
+    [
+      "en",
+      "English"
+    ],
+    [
+      "ar",
+      "العربية"
+    ],
+    [
+      "fr",
+      "Français"
+    ],
+    [
+      "es",
+      "Español"
+    ],
+    [
+      "de",
+      "Deutsch"
+    ],
+    [
+      "pl",
+      "Polski"
+    ],
+    [
+      "pt",
+      "Português"
+    ],
+    [
+      "it",
+      "Italiano"
+    ],
+    [
+      "tr",
+      "Türkçe"
+    ],
+    [
+      "zh",
+      "简体中文"
+    ],
+    [
+      "ja",
+      "日本語"
+    ],
+    [
+      "ko",
+      "한국어"
+    ],
+    [
+      "hi",
+      "हिन्दी"
+    ],
+    [
+      "id",
+      "Bahasa Indonesia"
+    ],
+    [
+      "ru",
+      "Русский"
+    ]
+  ],
+  "ui": {
+    "en": [
+      "Discover",
+      "Creators",
+      "Search content",
+      "Explore now"
+    ],
+    "ar": [
+      "استكشف",
+      "المبدعون",
+      "ابحث عن محتوى",
+      "اكتشف الآن"
+    ],
+    "fr": [
+      "Explorer",
+      "Créateurs",
+      "Rechercher",
+      "Découvrir"
+    ],
+    "es": [
+      "Explorar",
+      "Creadores",
+      "Buscar contenido",
+      "Descubrir"
+    ],
+    "de": [
+      "Entdecken",
+      "Creator",
+      "Inhalte suchen",
+      "Jetzt entdecken"
+    ],
+    "pl": [
+      "Odkrywaj",
+      "Twórcy",
+      "Szukaj treści",
+      "Odkryj teraz"
+    ],
+    "pt": [
+      "Explorar",
+      "Criadores",
+      "Pesquisar conteúdo",
+      "Descobrir"
+    ],
+    "it": [
+      "Esplora",
+      "Creator",
+      "Cerca contenuti",
+      "Scopri ora"
+    ],
+    "tr": [
+      "Keşfet",
+      "İçerik üreticileri",
+      "İçerik ara",
+      "Şimdi keşfet"
+    ],
+    "zh": [
+      "探索",
+      "创作者",
+      "搜索内容",
+      "立即探索"
+    ],
+    "ja": [
+      "探す",
+      "クリエイター",
+      "コンテンツを検索",
+      "今すぐ探索"
+    ],
+    "ko": [
+      "탐색",
+      "크리에이터",
+      "콘텐츠 검색",
+      "지금 탐색"
+    ],
+    "hi": [
+      "खोजें",
+      "रचनाकार",
+      "सामग्री खोजें",
+      "अभी खोजें"
+    ],
+    "id": [
+      "Jelajahi",
+      "Kreator",
+      "Cari konten",
+      "Jelajahi sekarang"
+    ],
+    "ru": [
+      "Исследовать",
+      "Авторы",
+      "Поиск контента",
+      "Открыть"
+    ]
+  }
+}
