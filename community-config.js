@@ -1,0 +1,1 @@
+export const firebaseConfig={apiKey:'AIzaSyAmFp2IqVqL1Cju-Q6jjDD5QqAC5beHfvA',authDomain:'pulsesphere-5e804.firebaseapp.com',projectId:'pulsesphere-5e804',storageBucket:'pulsesphere-5e804.appspot.com',messagingSenderId:'525827306876',appId:'1:525827306876:web:dde3b95be7408dcf1620f9'}

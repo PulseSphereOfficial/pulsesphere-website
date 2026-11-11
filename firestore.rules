@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function owner(data) {
+      return request.auth != null && request.auth.uid == data.author;
+    }
+    function validText(value, cap) {
+      return value is string && value.size() > 0 && value.size() <= cap;
+    }
+    match /communityPosts/{post} {
+      allow read: if true;
+      allow create: if owner(request.resource.data)
+        && request.resource.data.keys().hasOnly(['author','title','body','category','link','createdAt'])
+        && validText(request.resource.data.title,100)
+        && validText(request.resource.data.body,1000)
+        && request.resource.data.category in ['الأفلام','المسلسلات','الكوميديا','الرياضة','الألعاب','العلوم','القصص والألغاز']
+        && request.resource.data.link is string && request.resource.data.link.size() <= 2048
+        && (request.resource.data.link == '' || request.resource.data.link.matches('https://.+'))
+        && request.resource.data.createdAt == request.time;
+      match /comments/{comment} {
+        allow read: if exists(/databases/$(database)/documents/communityPosts/$(post));
+        allow create: if owner(request.resource.data)
+          && exists(/databases/$(database)/documents/communityPosts/$(post))
+          && request.resource.data.keys().hasOnly(['author','body','createdAt'])
+          && validText(request.resource.data.body,500)
+          && request.resource.data.createdAt == request.time;
+        allow delete: if owner(resource.data);
+      }
+    }
+  }
+}
